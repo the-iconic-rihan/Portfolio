@@ -1,13 +1,25 @@
-import React, { useRef } from 'react'
+import React, { useRef,useState } from 'react'
 import './contact.css'
+import emailjs from 'emailjs-com';
+
 import EditMail from '../../img/EditMail.png';
 import UserLocation from '../../img/UserLocation.png'
 import IncomingCall from '../../img/IncomingCall.png';
 const Contact = () => {
     const formRef = useRef()
-    const handleSubmit = (e)=>{
-        e.preventDefault()
-    }
+    const [done,setDone] = useState(false);
+    const handleSubmit = (e) => {
+        e.preventDefault()  //the funtion to avoid refresing of page after clicking onSubmit button.
+
+        emailjs.sendForm('rihanbagwan64@gmail.com', 'template_u2o33ie', formRef.current, 'user_Oiw43kVj4lTFJ6YUoghcd')
+            .then((result) => {
+                console.log(result.text);
+                setDone(true);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <div className='c'>
             <div className="c-bg"></div>
@@ -57,19 +69,10 @@ const Contact = () => {
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='message' name='message'></textarea>
                         </div>
                         <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-                                <label class="form-check-label" for="invalidCheck">
-                                    Agree to terms and conditions
-                                </label>
-                                <div class="invalid-feedback">
-                                    You must agree before submitting.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
                             <button class="btn btn-success" type="submit">Submit</button>
+                            
                         </div>
+                        {done && "Thank you ..."}
                     </form>
                 </div>
             </div>
