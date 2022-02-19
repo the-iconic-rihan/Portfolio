@@ -1,0 +1,78 @@
+:root {
+  --primary-green: #59b256;
+}
+.c {
+  height: 100vh;
+  position: relative;
+}
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: var(--primary-green);
+  position: absolute;
+}
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+.c-left {
+  flex: 1;
+}
+.c-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 80%;
+}
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  font-weight: 300;
+  height: 70%;
+}
+.c-icon {
+  height: 30px;
+  margin: 0.2rem;
+}
+.c-desc {
+  font-weight: 200;
+}
+
+/* FORM */
+.form-control:focus {
+  border-color: grey;
+  box-shadow:none;
+  border: 1px groove;
+
+}
+.input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+}
+textarea {
+  margin: 10px 0px;
+}
+textarea:hover:active {
+  border: 1px groove;
+}
+/* button */
+.btn-success:hover {
+    color: #fff;
+    background-color:var(--primary-green);
+    border-color:var(--primary-green);
+}
+.btn-success:focus{
+    box-shadow:none;
+
+}

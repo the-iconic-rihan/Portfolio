@@ -1,38 +1,37 @@
-import Me2 from '../src/img/Me2.png';
 export const products = [
     {
         id: 1,
-        img:  Me2 ,
+        img: "https://cdn.dribbble.com/users/1615584/screenshots/15871130/media/9a8ae8263ee90fce37cbd2f16feeb9ed.jpg",
         link: "https://the-iconic-rihan.github.io/Easy-bank",
 
     },
     {
         id: 2,
-        img: { Me2 },
+        img: "https://cdn.dribbble.com/users/1615584/screenshots/15871130/media/9a8ae8263ee90fce37cbd2f16feeb9ed.jpg",
         link: "https://the-iconic-rihan.github.io/Easy-bank",
 
     },
     {
         id: 3,
-        img: { Me2 },
+        img: "https://cdn.dribbble.com/users/1615584/screenshots/15871130/media/9a8ae8263ee90fce37cbd2f16feeb9ed.jpg",
         link: "https://the-iconic-rihan.github.io/Easy-bank",
 
     },
     {
         id: 4,
-        img: { Me2 },
+        img: "https://cdn.dribbble.com/users/1615584/screenshots/15871130/media/9a8ae8263ee90fce37cbd2f16feeb9ed.jpg",
         link: "https://the-iconic-rihan.github.io/Easy-bank",
 
     },
     {
         id: 5,
-        img:  Me2,
+        img: "https://cdn.dribbble.com/users/1615584/screenshots/15871130/media/9a8ae8263ee90fce37cbd2f16feeb9ed.jpg",
         link: "https://the-iconic-rihan.github.io/Easy-bank",
 
     },
     {
         id: 6,
-        img: { Me2 },
+        img: "https://cdn.dribbble.com/users/1615584/screenshots/15871130/media/9a8ae8263ee90fce37cbd2f16feeb9ed.jpg",
         link: "https://the-iconic-rihan.github.io/Easy-bank",
 
     },

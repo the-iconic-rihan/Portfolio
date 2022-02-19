@@ -1,6 +1,6 @@
 import React from 'react'
 import "./product.css"
-const Product = (img,link) => {
+const Product = ({img,link}) => {
     return (
         <div class='p'>
             <div className="p-browser">
