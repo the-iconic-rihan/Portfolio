@@ -20,10 +20,9 @@
 }
 .c-right {
   flex: 1;
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .c-title {
@@ -39,6 +38,7 @@
 }
 .c-icon {
   height: 30px;
+  width: 30px;
   margin: 0.2rem;
 }
 .c-desc {
@@ -48,9 +48,8 @@
 /* FORM */
 .form-control:focus {
   border-color: grey;
-  box-shadow:none;
+  box-shadow: none;
   border: 1px groove;
-
 }
 .input {
   width: 50%;
@@ -59,20 +58,54 @@
   border-bottom: 1px solid black;
   margin: 10px 0px;
   font-size: 14px;
+  padding-left: 10px;
 }
 textarea {
   margin: 10px 0px;
+  width: 100%;
+  font-size: 14px;
 }
 textarea:hover:active {
   border: 1px groove;
 }
 /* button */
 .btn-success:hover {
-    color: #fff;
-    background-color:var(--primary-green);
-    border-color:var(--primary-green);
+  color: #fff;
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
 }
-.btn-success:focus{
-    box-shadow:none;
+.btn-success:focus {
+  box-shadow: none;
+}
 
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+ 
+  .c-title {
+    font-size: 30px;
+  }
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .c-desc {
+    display: none;
+  }
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+  button {
+    margin-top: 10px;
+  }
 }
