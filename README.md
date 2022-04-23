@@ -68,4 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Portfolio
+This portfolio project contains the information about the software developer and student of Rihan Bagwan.
+The web portal is in progress.
 
